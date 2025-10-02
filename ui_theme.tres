@@ -1,0 +1,20 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bnwvxxsou20e5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dmjyp"]
+bg_color = Color(0, 0.37357748, 0.58393556, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 5
+shadow_offset = Vector2(2.28, 4.57)
+
+[resource]
+default_font_size = 30
+BoxContainer/constants/separation = 10
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/styles/normal = SubResource("StyleBoxFlat_dmjyp")

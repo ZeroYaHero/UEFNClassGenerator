@@ -1,0 +1,69 @@
+[gd_scene load_steps=6 format=3 uid="uid://cypmjsy06wj5g"]
+
+[ext_resource type="Script" uid="uid://7uity7vf0hi6" path="res://configuration.gd" id="1_c1h66"]
+[ext_resource type="Theme" uid="uid://bnwvxxsou20e5" path="res://ui_theme.tres" id="1_cals5"]
+[ext_resource type="PackedScene" uid="uid://ctwhdj0tsf2q1" path="res://group_properties.tscn" id="2_jxcyu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jxcyu"]
+content_margin_left = 40.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c1h66"]
+content_margin_left = 39.0
+
+[node name="Configuration" type="PanelContainer" node_paths=PackedStringArray("add_group_button", "group_vbox", "remove_configuration_button", "config_id_line_edit", "foldable_container")]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_cals5")
+theme_override_styles/panel = SubResource("StyleBoxEmpty_jxcyu")
+script = ExtResource("1_c1h66")
+add_group_button = NodePath("ConfigurationVBox/ConfigurationPanel/FoldableContainer/GroupVBox/AddGroupButton")
+group_vbox = NodePath("ConfigurationVBox/ConfigurationPanel/FoldableContainer/GroupVBox")
+remove_configuration_button = NodePath("ConfigurationVBox/ConfigurationID/RemoveConfigurationButton")
+config_id_line_edit = NodePath("ConfigurationVBox/ConfigurationID/ConfigurationIDLineEdit")
+foldable_container = NodePath("ConfigurationVBox/ConfigurationPanel/FoldableContainer")
+
+[node name="ConfigurationVBox" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme = ExtResource("1_cals5")
+
+[node name="ConfigurationID" type="HBoxContainer" parent="ConfigurationVBox"]
+layout_mode = 2
+theme = ExtResource("1_cals5")
+
+[node name="ConfigurationIDLineEdit" type="LineEdit" parent="ConfigurationVBox/ConfigurationID"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_cals5")
+placeholder_text = "Configuration ID"
+
+[node name="RemoveConfigurationButton" type="Button" parent="ConfigurationVBox/ConfigurationID"]
+layout_mode = 2
+theme = ExtResource("1_cals5")
+text = "Remove"
+
+[node name="ConfigurationPanel" type="PanelContainer" parent="ConfigurationVBox"]
+layout_mode = 2
+theme = ExtResource("1_cals5")
+theme_override_styles/panel = SubResource("StyleBoxEmpty_c1h66")
+
+[node name="FoldableContainer" type="FoldableContainer" parent="ConfigurationVBox/ConfigurationPanel"]
+layout_mode = 2
+theme = ExtResource("1_cals5")
+title = " "
+
+[node name="GroupVBox" type="VBoxContainer" parent="ConfigurationVBox/ConfigurationPanel/FoldableContainer"]
+layout_mode = 2
+theme = ExtResource("1_cals5")
+
+[node name="GroupPropertiesVBox" parent="ConfigurationVBox/ConfigurationPanel/FoldableContainer/GroupVBox" instance=ExtResource("2_jxcyu")]
+layout_mode = 2
+property_value_packed_scene = null
+
+[node name="AddGroupButton" type="Button" parent="ConfigurationVBox/ConfigurationPanel/FoldableContainer/GroupVBox"]
+layout_mode = 2
+theme = ExtResource("1_cals5")
+text = "+ Group"

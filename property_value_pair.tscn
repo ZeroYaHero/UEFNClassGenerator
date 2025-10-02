@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfet0c3dnaxdb"]
+
+[ext_resource type="Theme" uid="uid://bnwvxxsou20e5" path="res://ui_theme.tres" id="1_qf2hv"]
+[ext_resource type="Script" uid="uid://cu5ab0uapjhm0" path="res://property_value_pair.gd" id="1_usley"]
+
+[node name="PropertyValuesHBox" type="HBoxContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("1_qf2hv")
+script = ExtResource("1_usley")
+
+[node name="PropertyNameLineEdit" type="LineEdit" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme = ExtResource("1_qf2hv")
+placeholder_text = "Property Name
+"
+
+[node name="PropertyValueLineEdit" type="LineEdit" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_qf2hv")
+placeholder_text = "Property Value
+"
+
+[node name="RemoveProperty" type="Button" parent="."]
+layout_mode = 2
+theme = ExtResource("1_qf2hv")
+text = "Remove"
