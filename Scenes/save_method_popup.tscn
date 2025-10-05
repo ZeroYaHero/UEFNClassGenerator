@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cwlrme5kwdg25"]
 
-[ext_resource type="Script" uid="uid://cxdrcijnb6qsb" path="res://save_method_popup.gd" id="1_874og"]
+[ext_resource type="Script" uid="uid://cxdrcijnb6qsb" path="res://Scripts/save_method_popup.gd" id="1_874og"]
 
 [node name="SaveMethodPopup" type="Popup"]
 oversampling_override = 1.0

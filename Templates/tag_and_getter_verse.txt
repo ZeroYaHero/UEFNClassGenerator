@@ -1,0 +1,8 @@
+using { /Verse.org/Simulation/Tags }
+
+TAGS
+
+my_class_wrapper_getter := class<final_super>(class_getter_component):
+
+	GetClassWrappers<override>()<transacts>:[]class_wrapper =
+		array:

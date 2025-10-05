@@ -1,6 +1,6 @@
 class_name Configuration extends PanelContainer
 
-@export var group_packed_scene:PackedScene = preload("res://group_properties.tscn")
+@export var group_packed_scene:PackedScene = preload("res://Scenes/group_properties.tscn")
 @export var add_group_button:Button
 @export var group_vbox:VBoxContainer
 @export var remove_configuration_button:Button
@@ -16,11 +16,12 @@ func _ready() -> void:
 	await remove_configuration_button.pressed
 	self.queue_free()
 	
-func _on_add_group_pressed() -> void:
+func _on_add_group_pressed() -> GroupProperties:
 	var group_scene = group_packed_scene.instantiate()
 	group_scene._current_config_id = config_id_line_edit.get_text()
 	group_vbox.add_child(group_scene)
 	group_vbox.move_child(add_group_button, group_vbox.get_children().size() - 1)
+	return group_scene
 	
 func _on_config_id_changed(new_text:String) -> void:
 	config_id = new_text

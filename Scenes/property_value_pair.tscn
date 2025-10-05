@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bfet0c3dnaxdb"]
 
-[ext_resource type="Theme" uid="uid://bnwvxxsou20e5" path="res://ui_theme.tres" id="1_qf2hv"]
-[ext_resource type="Script" uid="uid://cu5ab0uapjhm0" path="res://property_value_pair.gd" id="1_usley"]
+[ext_resource type="Theme" uid="uid://bnwvxxsou20e5" path="res://Misc/ui_theme.tres" id="1_qf2hv"]
+[ext_resource type="Script" uid="uid://cu5ab0uapjhm0" path="res://Scripts/property_value_pair.gd" id="1_usley"]
 
 [node name="PropertyValuesHBox" type="HBoxContainer"]
 offset_right = 40.0

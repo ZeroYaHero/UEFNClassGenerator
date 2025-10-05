@@ -1,0 +1,291 @@
+Begin Map
+   Begin Level
+	  Begin Actor Class=/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C Name=Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044 Archetype="/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C'/CreativeCoreDevices/Device_ClassSelector_V2.Default__Device_ClassSelector_V2_C'" ActorFolderPath="None" ExportPath="/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044'"
+		 Begin Object Class=/Script/FortniteGame.BaseBuildingStaticMeshComponent Name="StaticMeshComponent0" Archetype="/Script/FortniteGame.BaseBuildingStaticMeshComponent'/CreativeCoreDevices/Device_ClassSelector_V2.Default__Device_ClassSelector_V2_C:StaticMeshComponent0'" ExportPath="/Script/FortniteGame.BaseBuildingStaticMeshComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.StaticMeshComponent0'"
+		 End Object
+		 Begin Object Class=/Script/Engine.BoxComponent Name="BoundingBoxComponent" Archetype="/Script/Engine.BoxComponent'/CreativeCoreDevices/Device_ClassSelector_V2.Default__Device_ClassSelector_V2_C:BoundingBoxComponent'" ExportPath="/Script/Engine.BoxComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.BoundingBoxComponent'"
+		 End Object
+		 Begin Object Class=/Script/Engine.StaticMeshComponent Name="EditorOnlyStaticMeshComponent" Archetype="/Script/Engine.StaticMeshComponent'/CreativeCoreDevices/Device_ClassSelector_V2.Default__Device_ClassSelector_V2_C:EditorOnlyStaticMeshComponent'" ExportPath="/Script/Engine.StaticMeshComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.EditorOnlyStaticMeshComponent'"
+		 End Object
+		 Begin Object Class=/Script/VerseGameplayTags.VerseTagMarkupComponent Name="VerseTagMarkup" ExportPath="/Script/VerseGameplayTags.VerseTagMarkupComponent'/Shop464/PROJECTNAME.PROJECTNAME:PersistentLevel.Device_ClassDesigner_V2_C_UAID_C87F545BB636289502_1148611898.VerseTagMarkup'"
+		 End Object
+		 Begin Object Class=/Game/Items/Traps/Blueprints/Toys/ToyOptionsComponent.ToyOptionsComponent_C Name="ToyOptions" Archetype="/Game/Items/Traps/Blueprints/Toys/ToyOptionsComponent.ToyOptionsComponent_C'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:ToyOptions_GEN_VARIABLE'" ExportPath="/Game/Items/Traps/Blueprints/Toys/ToyOptionsComponent.ToyOptionsComponent_C':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.ToyOptions'"
+		 End Object
+		 Begin Object Class=/Script/FortniteGame.FortMinigameLogicComponent Name="MinigameLogic" Archetype="/Script/FortniteGame.FortMinigameLogicComponent'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:MinigameLogic_GEN_VARIABLE'" ExportPath="/Script/FortniteGame.FortMinigameLogicComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.MinigameLogic'"
+		 End Object
+		 Begin Object Class=/Script/Engine.StaticMeshComponent Name="BaseMesh" Archetype="/Script/Engine.StaticMeshComponent'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:BaseMesh_GEN_VARIABLE'" ExportPath="/Script/Engine.StaticMeshComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.BaseMesh'"
+			Begin Object Class=/Script/Engine.MaterialInstanceDynamic Name="MI_Class_Selector_0-3E978A15302EDF8A" ExportPath="/Script/Engine.MaterialInstanceDynamic':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.BaseMesh.MI_Class_Selector_0-3E978A15302EDF8A'"
+			   Begin Object Class=/Script/Engine.MaterialInstanceEditorOnlyData Name="MI_Class_Selector_0-3E978A15302EDF8AEditorOnlyData" ExportPath="/Script/Engine.MaterialInstanceEditorOnlyData':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.BaseMesh.MI_Class_Selector_0-3E978A15302EDF8A.MI_Class_Selector_0-3E978A15302EDF8AEditorOnlyData'"
+			   End Object
+			End Object
+		 End Object
+		 Begin Object Class=/Script/Engine.StaticMeshComponent Name="LightRays" Archetype="/Script/Engine.StaticMeshComponent'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:LightRays_GEN_VARIABLE'" ExportPath="/Script/Engine.StaticMeshComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.LightRays'"
+			Begin Object Class=/Script/Engine.MaterialInstanceDynamic Name="M_NoWeaponZone_Rays_Inst_0-3E978A15E8A115C0" ExportPath="/Script/Engine.MaterialInstanceDynamic':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.LightRays.M_NoWeaponZone_Rays_Inst_0-3E978A15E8A115C0'"
+			   Begin Object Class=/Script/Engine.MaterialInstanceEditorOnlyData Name="M_NoWeaponZone_Rays_Inst_0-3E978A15E8A115C0EditorOnlyData" ExportPath="/Script/Engine.MaterialInstanceEditorOnlyData':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.LightRays.M_NoWeaponZone_Rays_Inst_0-3E978A15E8A115C0.M_NoWeaponZone_Rays_Inst_0-3E978A15E8A115C0EditorOnlyData'"
+			   End Object
+			End Object
+		 End Object
+		 Begin Object Class=/Script/Engine.PointLightComponent Name="Light" Archetype="/Script/Engine.PointLightComponent'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:Light_GEN_VARIABLE'" ExportPath="/Script/Engine.PointLightComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.Light'"
+		 End Object
+		 Begin Object Class=/Script/FortniteGame.FortGameplayTriggerMessageComponent Name="TriggerOnClassSwitch" Archetype="/Script/FortniteGame.FortGameplayTriggerMessageComponent'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:TriggerOnClassSwitch_GEN_VARIABLE'" ExportPath="/Script/FortniteGame.FortGameplayTriggerMessageComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.TriggerOnClassSwitch'"
+		 End Object
+		 Begin Object Class=/Script/FortniteGame.FortGameplayReceiverMessageComponent Name="EnabledWhenReceived" Archetype="/Script/FortniteGame.FortGameplayReceiverMessageComponent'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:EnabledWhenReceived_GEN_VARIABLE'" ExportPath="/Script/FortniteGame.FortGameplayReceiverMessageComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.EnabledWhenReceived'"
+		 End Object
+		 Begin Object Class=/Script/FortniteGame.FortGameplayReceiverMessageComponent Name="DisableWhenReceived" Archetype="/Script/FortniteGame.FortGameplayReceiverMessageComponent'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:DisableWhenReceived_GEN_VARIABLE'" ExportPath="/Script/FortniteGame.FortGameplayReceiverMessageComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.DisableWhenReceived'"
+		 End Object
+		 Begin Object Class=/Script/FortniteGame.FortGameplayReceiverMessageComponent Name="ChangeClassWhenReceived" Archetype="/Script/FortniteGame.FortGameplayReceiverMessageComponent'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:ChangeClassWhenReceived_GEN_VARIABLE'" ExportPath="/Script/FortniteGame.FortGameplayReceiverMessageComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.ChangeClassWhenReceived'"
+		 End Object
+		 Begin Object Class=/Script/Engine.SceneComponent Name="VolumeAreaScene" Archetype="/Script/Engine.SceneComponent'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:VolumeAreaScene_GEN_VARIABLE'" ExportPath="/Script/Engine.SceneComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.VolumeAreaScene'"
+		 End Object
+		 Begin Object Class=/Game/Creative/Devices/Common/Components/Creative_MeshZone_Component.Creative_MeshZone_Component_C Name="Creative_MeshZone_Component" Archetype="/Game/Creative/Devices/Common/Components/Creative_MeshZone_Component.Creative_MeshZone_Component_C'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:Creative_MeshZone_Component_GEN_VARIABLE'" ExportPath="/Game/Creative/Devices/Common/Components/Creative_MeshZone_Component.Creative_MeshZone_Component_C':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.Creative_MeshZone_Component'"
+			Begin Object Class=/Script/Engine.MaterialInstanceDynamic Name="MI_CaptureArea_DirectColor_0-3E978A156351E3D1" ExportPath="/Script/Engine.MaterialInstanceDynamic':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.Creative_MeshZone_Component.MI_CaptureArea_DirectColor_0-3E978A156351E3D1'"
+			   Begin Object Class=/Script/Engine.MaterialInstanceEditorOnlyData Name="MI_CaptureArea_DirectColor_0-3E978A156351E3D1EditorOnlyData" ExportPath="/Script/Engine.MaterialInstanceEditorOnlyData':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.Creative_MeshZone_Component.MI_CaptureArea_DirectColor_0-3E978A156351E3D1.MI_CaptureArea_DirectColor_0-3E978A156351E3D1EditorOnlyData'"
+			   End Object
+			End Object
+		 End Object
+		 Begin Object Class=/Script/Engine.AudioComponent Name="Ambient Loop" Archetype="/Script/Engine.AudioComponent'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:Ambient Loop_GEN_VARIABLE'" ExportPath="/Script/Engine.AudioComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.Ambient Loop'"
+		 End Object
+		 Begin Object Class=/Game/Creative/Devices/Common/Components/Creative_VisibleInGame_Component.Creative_VisibleInGame_Component_C Name="BaseMeshVisibleInGameComponent" Archetype="/Game/Creative/Devices/Common/Components/Creative_VisibleInGame_Component.Creative_VisibleInGame_Component_C'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:BaseMeshVisibleInGameComponent_GEN_VARIABLE'" ExportPath="/Game/Creative/Devices/Common/Components/Creative_VisibleInGame_Component.Creative_VisibleInGame_Component_C':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.BaseMeshVisibleInGameComponent'"
+		 End Object
+		 Begin Object Class=/Game/Creative/Devices/Common/Components/Creative_VisibleInGame_Component.Creative_VisibleInGame_Component_C Name="VolumeAreaMeshVisibleInGameComponent" Archetype="/Game/Creative/Devices/Common/Components/Creative_VisibleInGame_Component.Creative_VisibleInGame_Component_C'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:VolumeAreaMeshVisibleInGameComponent_GEN_VARIABLE'" ExportPath="/Game/Creative/Devices/Common/Components/Creative_VisibleInGame_Component.Creative_VisibleInGame_Component_C':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.VolumeAreaMeshVisibleInGameComponent'"
+		 End Object
+		 Begin Object Class=/Game/Creative/Devices/Common/Components/Creative_Enabled_Component.Creative_Enabled_Component_C Name="EnabledComponent" Archetype="/Game/Creative/Devices/Common/Components/Creative_Enabled_Component.Creative_Enabled_Component_C'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:EnabledComponent_GEN_VARIABLE'" ExportPath="/Game/Creative/Devices/Common/Components/Creative_Enabled_Component.Creative_Enabled_Component_C':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.EnabledComponent'"
+		 End Object
+		 Begin Object Class=/Game/Creative/Devices/Team_Selector/Components/Creative_TeamSelection_Component.Creative_TeamSelection_Component_C Name="TeamSelectionComponent" Archetype="/Game/Creative/Devices/Team_Selector/Components/Creative_TeamSelection_Component.Creative_TeamSelection_Component_C'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:TeamSelectionComponent_GEN_VARIABLE'" ExportPath="/Game/Creative/Devices/Team_Selector/Components/Creative_TeamSelection_Component.Creative_TeamSelection_Component_C':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.TeamSelectionComponent'"
+		 End Object
+		 Begin Object Class=/Game/Creative/Devices/Common/Components/Creative_UseRestriction_Component.Creative_UseRestriction_Component_C Name="UseRestrictionComponent" Archetype="/Game/Creative/Devices/Common/Components/Creative_UseRestriction_Component.Creative_UseRestriction_Component_C'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:UseRestrictionComponent_GEN_VARIABLE'" ExportPath="/Game/Creative/Devices/Common/Components/Creative_UseRestriction_Component.Creative_UseRestriction_Component_C':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.UseRestrictionComponent'"
+		 End Object
+		 Begin Object Class=/Script/FortniteGame.FortGameplayTriggerMessageComponent Name="TriggerOnTeamSwitch" Archetype="/Script/FortniteGame.FortGameplayTriggerMessageComponent'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:TriggerOnTeamSwitch_GEN_VARIABLE'" ExportPath="/Script/FortniteGame.FortGameplayTriggerMessageComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.TriggerOnTeamSwitch'"
+		 End Object
+		 Begin Object Class=/Script/FortniteGame.FortGameplayReceiverMessageComponent Name="ChangeTeamWhenReceived" Archetype="/Script/FortniteGame.FortGameplayReceiverMessageComponent'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:ChangeTeamWhenReceived_GEN_VARIABLE'" ExportPath="/Script/FortniteGame.FortGameplayReceiverMessageComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.ChangeTeamWhenReceived'"
+		 End Object
+		 Begin Object Class=/Script/FortniteGame.FortGameplayReceiverMessageComponent Name="ChangeTeamAndClassWhenReceived" Archetype="/Script/FortniteGame.FortGameplayReceiverMessageComponent'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:ChangeTeamAndClassWhenReceived_GEN_VARIABLE'" ExportPath="/Script/FortniteGame.FortGameplayReceiverMessageComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.ChangeTeamAndClassWhenReceived'"
+		 End Object
+		 Begin Object Class=/Script/FortniteGame.FortGameplayReceiverMessageComponent Name="UpdateSelectedTeamWhenReceived" Archetype="/Script/FortniteGame.FortGameplayReceiverMessageComponent'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:UpdateSelectedTeamWhenReceived_GEN_VARIABLE'" ExportPath="/Script/FortniteGame.FortGameplayReceiverMessageComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.UpdateSelectedTeamWhenReceived'"
+		 End Object
+		 Begin Object Class=/Script/FortniteGame.CreativeVersionComponent Name="CreativeVersion" Archetype="/Script/FortniteGame.CreativeVersionComponent'/CreativeCoreDevices/Device_ClassSelector_V2.Device_ClassSelector_V2_C:CreativeVersion_GEN_VARIABLE'" ExportPath="/Script/FortniteGame.CreativeVersionComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.CreativeVersion'"
+		 End Object
+		 Begin Object Name="StaticMeshComponent0" ExportPath="/Script/FortniteGame.BaseBuildingStaticMeshComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.StaticMeshComponent0'"
+			CachedMaxDrawDistance=16617.398438
+		 End Object
+		 Begin Object Name="BoundingBoxComponent" ExportPath="/Script/Engine.BoxComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.BoundingBoxComponent'"
+			CachedMaxDrawDistance=16617.398438
+			AttachParent="StaticMeshComponent0"
+		 End Object
+		 Begin Object Name="EditorOnlyStaticMeshComponent" ExportPath="/Script/Engine.StaticMeshComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.EditorOnlyStaticMeshComponent'"
+			CachedMaxDrawDistance=16617.398438
+			AttachParent="StaticMeshComponent0"
+		 End Object
+		 Begin Object Name="VerseTagMarkup" ExportPath="/Script/VerseGameplayTags.VerseTagMarkupComponent'/PROJECTNAME/PROJECTNAME.PROJECTNAME:PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636279502_1837453706.VerseTagMarkup'"
+			InternalTags=(InternalTags=((InternalTag="/Script/CoreUObject.VerseClass'/PROJECTNAME/_Verse.TAG'")))
+			CreationMethod=Instance
+		 End Object
+		 Begin Object Name="ToyOptions" ExportPath="/Game/Items/Traps/Blueprints/Toys/ToyOptionsComponent.ToyOptionsComponent_C':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.ToyOptions'"
+			PlayerOptionData=(PropertyOverrides=((PropertyName="AccentColor",PropertyData="(R=0.068478,G=0.603827,B=1.000000,A=1.000000)"),(PropertyName="AccentColorType",PropertyData="Direct Color"),(PropertyName="ActivatingTeam",PropertyData="(TeamType=Any,TeamIndex=1)"),(PropertyName="ActivationAudio",PropertyData="True"),(PropertyName="bRespawnPlayerOnSwitch",PropertyData="False"),(PropertyName="bSendGameStartClassChangesAtWarmup",PropertyData="False"),(PropertyName="bSendGameStartTeamChangesAtWarmup",PropertyData="False"),(PropertyName="ClassToSwitchTo"),(PropertyName="ClearItemOnSwitchRule",PropertyData="NeverClear"),(PropertyName="DisplayVFXEffectOnActivation",PropertyData="True"),(PropertyName="EnabledDuringPhase",PropertyData="Gameplay Only"),(PropertyName="LabelOverride",PropertyData="Class Selector"),(PropertyName="RestoreHealthAndShieldsOnSwitch",PropertyData="True"),(PropertyName="SizeOfVolume",PropertyData="1.000000"),(PropertyName="TeamToSwitchTo"),(PropertyName="ThrottleClassChanges",PropertyData="False"),(PropertyName="TimeToSwitch",PropertyData="0.000000"),(PropertyName="VisibleDuringGame",PropertyData="True"),(PropertyName="VolumeVisibleInGame",PropertyData="True"),(PropertyName="ZoneAudio",PropertyData="True")))
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 Begin Object Name="MinigameLogic" ExportPath="/Script/FortniteGame.FortMinigameLogicComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.MinigameLogic'"
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 Begin Object Name="BaseMesh" ExportPath="/Script/Engine.StaticMeshComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.BaseMesh'"
+			Begin Object Name="MI_Class_Selector_0-3E978A15302EDF8A" ExportPath="/Script/Engine.MaterialInstanceDynamic':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.BaseMesh.MI_Class_Selector_0-3E978A15302EDF8A'"
+			   Begin Object Name="MI_Class_Selector_0-3E978A15302EDF8AEditorOnlyData" ExportPath="/Script/Engine.MaterialInstanceEditorOnlyData':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.BaseMesh.MI_Class_Selector_0-3E978A15302EDF8A.MI_Class_Selector_0-3E978A15302EDF8AEditorOnlyData'"
+			   End Object
+			   Parent="/Script/Engine.MaterialInstanceConstant'/Game/Creative/Devices/Class_Selector/Materials/MI_Class_Selector.MI_Class_Selector'"
+			   ScalarParameterValues(0)=(ParameterInfo=(Name="TeamColor"),ParameterValue=13.000000)
+			   EditorOnlyData="/Script/Engine.MaterialInstanceEditorOnlyData'MI_Class_Selector_0-3E978A15302EDF8AEditorOnlyData'"
+			   LightingGuid=689D392F4BB64ACB5FB96B8585D7F83D
+			End Object
+			OverrideMaterials(0)="/Script/Engine.MaterialInstanceDynamic'MI_Class_Selector_0-3E978A15302EDF8A'"
+			CachedMaxDrawDistance=16617.398438
+			BodyInstance=(MaxAngularVelocity=3599.999756)
+			AttachParent="StaticMeshComponent0"
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 Begin Object Name="LightRays" ExportPath="/Script/Engine.StaticMeshComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.LightRays'"
+			Begin Object Name="M_NoWeaponZone_Rays_Inst_0-3E978A15E8A115C0" ExportPath="/Script/Engine.MaterialInstanceDynamic':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.LightRays.M_NoWeaponZone_Rays_Inst_0-3E978A15E8A115C0'"
+			   Begin Object Name="M_NoWeaponZone_Rays_Inst_0-3E978A15E8A115C0EditorOnlyData" ExportPath="/Script/Engine.MaterialInstanceEditorOnlyData':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.LightRays.M_NoWeaponZone_Rays_Inst_0-3E978A15E8A115C0.M_NoWeaponZone_Rays_Inst_0-3E978A15E8A115C0EditorOnlyData'"
+			   End Object
+			   Parent="/Script/Engine.MaterialInstanceConstant'/Game/Items/Traps/Materials/M_NoWeaponZone_Rays_Inst.M_NoWeaponZone_Rays_Inst'"
+			   VectorParameterValues(0)=(ParameterInfo=(Name="ColorHigh"),ParameterValue=(R=0.136956,G=1.207654,B=2.000000,A=2.000000))
+			   VectorParameterValues(1)=(ParameterInfo=(Name="ColorLow"),ParameterValue=(R=0.136956,G=1.207654,B=2.000000,A=2.000000))
+			   EditorOnlyData="/Script/Engine.MaterialInstanceEditorOnlyData'M_NoWeaponZone_Rays_Inst_0-3E978A15E8A115C0EditorOnlyData'"
+			   LightingGuid=184A632F476992C6623ED7A76FA49800
+			End Object
+			OverrideMaterials(0)="/Script/Engine.MaterialInstanceDynamic'M_NoWeaponZone_Rays_Inst_0-3E978A15E8A115C0'"
+			CachedMaxDrawDistance=16617.398438
+			BodyInstance=(CollisionEnabled=NoCollision,CollisionProfileName="Custom")
+			AttachParent="BaseMesh"
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 Begin Object Name="Light" ExportPath="/Script/Engine.PointLightComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.Light'"
+			MaxDrawDistance=16617.398438
+			MaxDistanceFadeRange=2048.000000
+			LightColor=(B=255,G=154,R=17,A=255)
+			VolumetricScatteringIntensity=0.000000
+			AttachParent="BaseMesh"
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 Begin Object Name="TriggerOnClassSwitch" ExportPath="/Script/FortniteGame.FortGameplayTriggerMessageComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.TriggerOnClassSwitch'"
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 Begin Object Name="EnabledWhenReceived" ExportPath="/Script/FortniteGame.FortGameplayReceiverMessageComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.EnabledWhenReceived'"
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 Begin Object Name="DisableWhenReceived" ExportPath="/Script/FortniteGame.FortGameplayReceiverMessageComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.DisableWhenReceived'"
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 Begin Object Name="ChangeClassWhenReceived" ExportPath="/Script/FortniteGame.FortGameplayReceiverMessageComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.ChangeClassWhenReceived'"
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 Begin Object Name="VolumeAreaScene" ExportPath="/Script/Engine.SceneComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.VolumeAreaScene'"
+			AttachParent="StaticMeshComponent0"
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 Begin Object Name="Creative_MeshZone_Component" ExportPath="/Game/Creative/Devices/Common/Components/Creative_MeshZone_Component.Creative_MeshZone_Component_C':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.Creative_MeshZone_Component'"
+			Begin Object Name="MI_CaptureArea_DirectColor_0-3E978A156351E3D1" ExportPath="/Script/Engine.MaterialInstanceDynamic':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.Creative_MeshZone_Component.MI_CaptureArea_DirectColor_0-3E978A156351E3D1'"
+			   Begin Object Name="MI_CaptureArea_DirectColor_0-3E978A156351E3D1EditorOnlyData" ExportPath="/Script/Engine.MaterialInstanceEditorOnlyData':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.Creative_MeshZone_Component.MI_CaptureArea_DirectColor_0-3E978A156351E3D1.MI_CaptureArea_DirectColor_0-3E978A156351E3D1EditorOnlyData'"
+			   End Object
+			   Parent="/Script/Engine.MaterialInstanceConstant'/CreativeCoreDevices/CaptureArea/MI_CaptureArea_DirectColor.MI_CaptureArea_DirectColor'"
+			   VectorParameterValues(0)=(ParameterInfo=(Name="Color"),ParameterValue=(R=0.068478,G=0.603827,B=1.000000,A=1.000000))
+			   EditorOnlyData="/Script/Engine.MaterialInstanceEditorOnlyData'MI_CaptureArea_DirectColor_0-3E978A156351E3D1EditorOnlyData'"
+			   LightingGuid=D38407D1481F0EA7CB13618EF3A94AE6
+			End Object
+			Enabled Component="/Game/Creative/Devices/Common/Components/Creative_Enabled_Component.Creative_Enabled_Component_C'TRASH_Creative_Enabled_Component_C_10'"
+			Logic Component="/Script/FortniteGame.FortMinigameLogicComponent'TRASH_FortMinigameLogicComponent_10'"
+			Use Restriction Component="/Game/Creative/Devices/Common/Components/Creative_UseRestriction_Component.Creative_UseRestriction_Component_C'TRASH_Creative_UseRestriction_Component_C_10'"
+			OverrideMaterials(0)="/Script/Engine.MaterialInstanceDynamic'MI_CaptureArea_DirectColor_0-3E978A156351E3D1'"
+			CachedMaxDrawDistance=16617.398438
+			BodyInstance=(CollisionEnabled=NoCollision,MaxAngularVelocity=3599.999756)
+			AttachParent="VolumeAreaScene"
+			RelativeScale3D=(X=100.000000,Y=100.000000,Z=384.000000)
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 Begin Object Name="Ambient Loop" ExportPath="/Script/Engine.AudioComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.Ambient Loop'"
+			AttachParent="StaticMeshComponent0"
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 Begin Object Name="BaseMeshVisibleInGameComponent" ExportPath="/Game/Creative/Devices/Common/Components/Creative_VisibleInGame_Component.Creative_VisibleInGame_Component_C':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.BaseMeshVisibleInGameComponent'"
+			Visibility Components with Collision=(("/Script/Engine.StaticMeshComponent'TRASH_StaticMeshComponent_21'", QueryAndPhysics),("/Script/Engine.StaticMeshComponent'TRASH_StaticMeshComponent_20'", NoCollision),("/Script/Engine.PointLightComponent'TRASH_PointLightComponent_10'", NoCollision),("/Script/Engine.AudioComponent'TRASH_AudioComponent_10'", NoCollision))
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 Begin Object Name="VolumeAreaMeshVisibleInGameComponent" ExportPath="/Game/Creative/Devices/Common/Components/Creative_VisibleInGame_Component.Creative_VisibleInGame_Component_C':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.VolumeAreaMeshVisibleInGameComponent'"
+			VisibleSceneComponents(0)="/Game/Creative/Devices/Common/Components/Creative_MeshZone_Component.Creative_MeshZone_Component_C'TRASH_Creative_MeshZone_Component_C_10'"
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 Begin Object Name="EnabledComponent" ExportPath="/Game/Creative/Devices/Common/Components/Creative_Enabled_Component.Creative_Enabled_Component_C':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.EnabledComponent'"
+			Enabled Index=2
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 Begin Object Name="TeamSelectionComponent" ExportPath="/Game/Creative/Devices/Team_Selector/Components/Creative_TeamSelection_Component.Creative_TeamSelection_Component_C':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.TeamSelectionComponent'"
+			TeamSelectorState=NewEnumerator2
+			DesiredTeamInt=-9
+			Logic Component="/Script/FortniteGame.FortMinigameLogicComponent'TRASH_FortMinigameLogicComponent_10'"
+			ClearItemSetting=NewEnumerator2
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 Begin Object Name="UseRestrictionComponent" ExportPath="/Game/Creative/Devices/Common/Components/Creative_UseRestriction_Component.Creative_UseRestriction_Component_C':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.UseRestrictionComponent'"
+			EnabledComponent="/Game/Creative/Devices/Common/Components/Creative_Enabled_Component.Creative_Enabled_Component_C'TRASH_Creative_Enabled_Component_C_10'"
+			ToyOptions="/Game/Items/Traps/Blueprints/Toys/ToyOptionsComponent.ToyOptionsComponent_C'TRASH_ToyOptionsComponent_C_10'"
+			RequiredTeam=-5
+			NativeRequiredTeam=-5
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 Begin Object Name="TriggerOnTeamSwitch" ExportPath="/Script/FortniteGame.FortGameplayTriggerMessageComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.TriggerOnTeamSwitch'"
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 Begin Object Name="ChangeTeamWhenReceived" ExportPath="/Script/FortniteGame.FortGameplayReceiverMessageComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.ChangeTeamWhenReceived'"
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 Begin Object Name="ChangeTeamAndClassWhenReceived" ExportPath="/Script/FortniteGame.FortGameplayReceiverMessageComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.ChangeTeamAndClassWhenReceived'"
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 Begin Object Name="UpdateSelectedTeamWhenReceived" ExportPath="/Script/FortniteGame.FortGameplayReceiverMessageComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.UpdateSelectedTeamWhenReceived'"
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 Begin Object Name="CreativeVersion" ExportPath="/Script/FortniteGame.CreativeVersionComponent':PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636519402_1682972044.CreativeVersion'"
+			LastSavedReleaseVersion=(CachedVersion=19)
+			UCSSerializationIndex=0
+			bNetAddressable=True
+			CreationMethod=SimpleConstructionScript
+		 End Object
+		 CreativeVersion="CreativeVersion"
+		 UpdateSelectedTeamWhenReceived="UpdateSelectedTeamWhenReceived"
+		 ChangeTeamAndClassWhenReceived="ChangeTeamAndClassWhenReceived"
+		 ChangeTeamWhenReceived="ChangeTeamWhenReceived"
+		 TriggerOnTeamSwitch="TriggerOnTeamSwitch"
+		 UseRestrictionComponent="UseRestrictionComponent"
+		 TeamSelectionComponent="TeamSelectionComponent"
+		 Creative_MeshZone_Component="Creative_MeshZone_Component"
+		 EnabledComponent="EnabledComponent"
+		 VolumeAreaMeshVisibleInGameComponent="VolumeAreaMeshVisibleInGameComponent"
+		 BaseMeshVisibleInGameComponent="BaseMeshVisibleInGameComponent"
+		 Ambient Loop="Ambient Loop"
+		 VolumeAreaScene="VolumeAreaScene"
+		 ChangeClassWhenReceived="ChangeClassWhenReceived"
+		 DisableWhenReceived="DisableWhenReceived"
+		 EnabledWhenReceived="EnabledWhenReceived"
+		 TriggerOnClassSwitch="TriggerOnClassSwitch"
+		 Light="Light"
+		 LightRays="LightRays"
+		 BaseMesh="BaseMesh"
+		 MinigameLogic="MinigameLogic"
+		 ToyOptions="ToyOptions"
+		 TimeOfDayControlledLightDataArray(0)=(LightComponent="Light",Position=(X=0.000000,Y=-0.001526,Z=75.583054),InitialIntensity=35.000000)
+		 StaticMeshComponent="StaticMeshComponent0"
+		 BoxComponent="BoundingBoxComponent"
+		 EditorOnlyStaticMeshComponent="EditorOnlyStaticMeshComponent"
+		 CullDistance=16617.398438
+		 SavedActorGuid=0460ED1F4076E075B6257F908B1EBF70
+		 LabelOverride="Class Selector"
+		 NetDormancy=DORM_DormantAll
+		 RootComponent="StaticMeshComponent0"
+		 ActorLabel="Class Selector"
+		 InstanceComponents(0)="/Script/VerseGameplayTags.VerseTagMarkupComponent'VerseTagMarkup'"
+	  End Actor
+   End Level
+Begin Surface
+End Surface
+End Map

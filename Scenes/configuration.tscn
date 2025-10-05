@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cypmjsy06wj5g"]
+[gd_scene load_steps=5 format=3 uid="uid://cypmjsy06wj5g"]
 
-[ext_resource type="Script" uid="uid://7uity7vf0hi6" path="res://configuration.gd" id="1_c1h66"]
-[ext_resource type="Theme" uid="uid://bnwvxxsou20e5" path="res://ui_theme.tres" id="1_cals5"]
-[ext_resource type="PackedScene" uid="uid://ctwhdj0tsf2q1" path="res://group_properties.tscn" id="2_jxcyu"]
+[ext_resource type="Theme" uid="uid://bnwvxxsou20e5" path="res://Misc/ui_theme.tres" id="1_jksga"]
+[ext_resource type="Script" uid="uid://7uity7vf0hi6" path="res://Scripts/configuration.gd" id="2_e6ldk"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jxcyu"]
 content_margin_left = 40.0
@@ -17,9 +16,9 @@ anchor_right = 1.0
 anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_cals5")
+theme = ExtResource("1_jksga")
 theme_override_styles/panel = SubResource("StyleBoxEmpty_jxcyu")
-script = ExtResource("1_c1h66")
+script = ExtResource("2_e6ldk")
 add_group_button = NodePath("ConfigurationVBox/ConfigurationPanel/FoldableContainer/GroupVBox/AddGroupButton")
 group_vbox = NodePath("ConfigurationVBox/ConfigurationPanel/FoldableContainer/GroupVBox")
 remove_configuration_button = NodePath("ConfigurationVBox/ConfigurationID/RemoveConfigurationButton")
@@ -28,42 +27,38 @@ foldable_container = NodePath("ConfigurationVBox/ConfigurationPanel/FoldableCont
 
 [node name="ConfigurationVBox" type="VBoxContainer" parent="."]
 layout_mode = 2
-theme = ExtResource("1_cals5")
+theme = ExtResource("1_jksga")
 
 [node name="ConfigurationID" type="HBoxContainer" parent="ConfigurationVBox"]
 layout_mode = 2
-theme = ExtResource("1_cals5")
+theme = ExtResource("1_jksga")
 
 [node name="ConfigurationIDLineEdit" type="LineEdit" parent="ConfigurationVBox/ConfigurationID"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme = ExtResource("1_cals5")
+theme = ExtResource("1_jksga")
 placeholder_text = "Configuration ID"
 
 [node name="RemoveConfigurationButton" type="Button" parent="ConfigurationVBox/ConfigurationID"]
 layout_mode = 2
-theme = ExtResource("1_cals5")
+theme = ExtResource("1_jksga")
 text = "Remove"
 
 [node name="ConfigurationPanel" type="PanelContainer" parent="ConfigurationVBox"]
 layout_mode = 2
-theme = ExtResource("1_cals5")
+theme = ExtResource("1_jksga")
 theme_override_styles/panel = SubResource("StyleBoxEmpty_c1h66")
 
 [node name="FoldableContainer" type="FoldableContainer" parent="ConfigurationVBox/ConfigurationPanel"]
 layout_mode = 2
-theme = ExtResource("1_cals5")
+theme = ExtResource("1_jksga")
 title = " "
 
 [node name="GroupVBox" type="VBoxContainer" parent="ConfigurationVBox/ConfigurationPanel/FoldableContainer"]
 layout_mode = 2
-theme = ExtResource("1_cals5")
-
-[node name="GroupPropertiesVBox" parent="ConfigurationVBox/ConfigurationPanel/FoldableContainer/GroupVBox" instance=ExtResource("2_jxcyu")]
-layout_mode = 2
-property_value_packed_scene = null
+theme = ExtResource("1_jksga")
 
 [node name="AddGroupButton" type="Button" parent="ConfigurationVBox/ConfigurationPanel/FoldableContainer/GroupVBox"]
 layout_mode = 2
-theme = ExtResource("1_cals5")
+theme = ExtResource("1_jksga")
 text = "+ Group"

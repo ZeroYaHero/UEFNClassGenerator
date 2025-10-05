@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdqbk4xfwbpyq"]
+
+[ext_resource type="Script" uid="uid://cvsieinx1qper" path="res://Scripts/clipboard.gd" id="1_utkw3"]
+
+[node name="Clipboard" type="Window"]
+oversampling_override = 1.0
+title = "Device & Verse Clipboards"
+initial_position = 2
+size = Vector2i(800, 600)
+transient_to_focused = true
+script = ExtResource("1_utkw3")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Devices" type="TextEdit" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Verse" type="TextEdit" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3

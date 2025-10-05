@@ -1,0 +1,5 @@
+			class_wrapper:
+				Slot := %d
+				Designer := GetClassDesigner(TAG{})
+				Selector := GetClassSelector(TAG{})
+				Properties := map:

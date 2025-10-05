@@ -16,10 +16,11 @@ func _ready() -> void:
 	await $IDRemoveHBox/RemoveGroupButton.pressed
 	self.queue_free()
 	
-func _on_add_property_pair() -> void:
-	var property_value_scene = load("res://property_value_pair.tscn").instantiate()
+func _on_add_property_pair() -> PropertyValuePair:
+	var property_value_scene = load("res://Scenes/property_value_pair.tscn").instantiate()
 	properties_vbox.add_child(property_value_scene)
 	properties_vbox.move_child(add_property_pair_button, properties_vbox.get_children().size() - 1)
+	return property_value_scene
 	
 func _on_group_id_changed(new_text:String) -> void:
 	if foldable_container.is_folded():

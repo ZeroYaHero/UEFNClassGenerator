@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://ctwhdj0tsf2q1"]
+[gd_scene load_steps=4 format=3 uid="uid://ctwhdj0tsf2q1"]
 
-[ext_resource type="PackedScene" uid="uid://bfet0c3dnaxdb" path="res://property_value_pair.tscn" id="1_6dlpl"]
-[ext_resource type="Theme" uid="uid://bnwvxxsou20e5" path="res://ui_theme.tres" id="1_ovp5w"]
-[ext_resource type="Script" uid="uid://cc5ktneufw5u4" path="res://group_properties.gd" id="1_s880o"]
+[ext_resource type="Theme" uid="uid://bnwvxxsou20e5" path="res://Misc/ui_theme.tres" id="1_c2svd"]
+[ext_resource type="Script" uid="uid://cc5ktneufw5u4" path="res://Scripts/group_properties.gd" id="2_y2wf6"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s880o"]
 content_margin_left = 40.0
@@ -13,8 +12,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_ovp5w")
-script = ExtResource("1_s880o")
+theme = ExtResource("1_c2svd")
+script = ExtResource("2_y2wf6")
 group_id_line_edit = NodePath("IDRemoveHBox/GroupIDLineEdit")
 properties_foldable = NodePath("PropertiesPanel/FoldableContainer")
 properties_vbox = NodePath("PropertiesPanel/FoldableContainer/PropertiesVBox")
@@ -23,37 +22,34 @@ foldable_container = NodePath("PropertiesPanel/FoldableContainer")
 
 [node name="IDRemoveHBox" type="HBoxContainer" parent="."]
 layout_mode = 2
-theme = ExtResource("1_ovp5w")
+theme = ExtResource("1_c2svd")
 
 [node name="GroupIDLineEdit" type="LineEdit" parent="IDRemoveHBox"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme = ExtResource("1_ovp5w")
+theme = ExtResource("1_c2svd")
 placeholder_text = "Group ID"
 
 [node name="RemoveGroupButton" type="Button" parent="IDRemoveHBox"]
 layout_mode = 2
-theme = ExtResource("1_ovp5w")
+theme = ExtResource("1_c2svd")
 text = "Remove"
 
 [node name="PropertiesPanel" type="PanelContainer" parent="."]
 layout_mode = 2
-theme = ExtResource("1_ovp5w")
+theme = ExtResource("1_c2svd")
 theme_override_styles/panel = SubResource("StyleBoxEmpty_s880o")
 
 [node name="FoldableContainer" type="FoldableContainer" parent="PropertiesPanel"]
 layout_mode = 2
-theme = ExtResource("1_ovp5w")
+theme = ExtResource("1_c2svd")
 title = " "
 
 [node name="PropertiesVBox" type="VBoxContainer" parent="PropertiesPanel/FoldableContainer"]
 layout_mode = 2
-theme = ExtResource("1_ovp5w")
-
-[node name="PropertyValuesHBox" parent="PropertiesPanel/FoldableContainer/PropertiesVBox" instance=ExtResource("1_6dlpl")]
-layout_mode = 2
+theme = ExtResource("1_c2svd")
 
 [node name="AddPropertyButton" type="Button" parent="PropertiesPanel/FoldableContainer/PropertiesVBox"]
 layout_mode = 2
-theme = ExtResource("1_ovp5w")
+theme = ExtResource("1_c2svd")
 text = "+ Property"

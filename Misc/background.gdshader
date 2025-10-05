@@ -1,5 +1,5 @@
 shader_type canvas_item;
-#include "res://fbm.gdshaderinc"
+#include "res://Misc/fbm.gdshaderinc"
 
 uniform vec4 a:source_color;
 uniform vec4 b:source_color;
