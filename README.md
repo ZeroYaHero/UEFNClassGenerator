@@ -1,4 +1,6 @@
 # UEFN Class Generator
+![hippo](Examples/demonstration.gif)
+
 *As of date (October 4th, 2025) and Fortnite/UEFN version (37.40) this tool is functional and there is no native scripting or editor alternative.*
 
 This is a GUI created in Godot to generate Fortnite/UEFN "Class Slots" given configurations containing property groups. The cartesian product of the configurations (sets) and their property groups (elements) results in new "Class Slots," which simply represent a combination of the provided configurations and their properties.
@@ -13,10 +15,53 @@ In Fortnite/UEFN...
 
 *Thus...*
 For every combination of settings you can think of, a new Class (Slot/Index) is necessary. Therefore, for each class slot, a new Class Designer and Selector are needed.
-__That is a lot work to do...have a computer do it.__
+__That is a lot work to do...Have a computer do it!__
+
+## Generating the Classes and Placing in Editor
+<ol>
+<li>Importing / Editing Configuration Settings</li>
+  <ul>
+    <li>Import a previously exported & saved configurations json from the program</li>
+    <li>In the text edit box in the top right, type the name of your project. At the moment, the level you are in should be of the same name. Sub-directory/path support may come at a later date.</li>
+    <li>Use the provided buttons to add configurations, their groups, and an array of property-value pairs.</li>
+  </ul>
+<li>Export</li>
+  <ul>
+    <li>After making or importing configurations, you can save the configurations to a JSON file...</li>
+    <li>Or you can copy to the clipboard the configurations JSON string...</li>
+    <li>Or you can generate the class combinations (seen in the next numbered step).</li>
+  </ul>
+<li>Generate Class Combinations</li>
+   <ul>
+    <li>After the generation takes place, a window will pop up with two text blobs. Copy the right hand side which contains the Verse tag definitions and the `my_class_wrapper_getter` </li>
+    <li>Paste the provided code into a new Verse file which is in the root level (content folder) of your UEFN project.</li>
+    <li>**Build Verse code. Missing this step risks the pasting of the actors not working at all.**</li>
+    <li>Copy the left hand side. This contains the UProperty clipboard for all the generated class designer and selector device/actors.</li>
+    <li>Paste the clipboard into your level.</li>
+  </ul>
+</ol>
+
+## Using the Generated Classes
+Once the combinations are generated, the getter code has been pasted, and Verse has been built... you are ready to go!
+
+With the provided `property_based_class_manager_component.verse` you don't need to memorize or manually input the classes properties in your system. It is abstracted away from you. All it takes is a simple call:
+
+`ChangeClassDeltaProperties(agent, map{"ConfigurationName" => "GroupName"}):void`
+
+You of course can provide the entire configuration/property set if you'd like:
+
+`ChangeClassAllProperties(agent, map{ConfigurationOne => GroupX, ConfigurationTwo => GroupY, ... ConfigurationN => GroupZ}):void`
+
+Sometimes its also convienient to still use the class slots for very straightforward logic:
+
+`ChangeClassByClassSlot(agent, x):void`
+
+And of course, with this manager you can now easily see what exactly is the behavior/properties of the current class that the player is on:
+
+`GetCurrentClassProperties(agent):[string]string`
 
 ## Example configurations.json
-These sets are configurations categories you define in the tool. In example, health. The elements of the configurations are all the different health options you desire which you can group together. So in example
+These sets are configurations categories you define in the tool. In example, health. The elements of the configurations are all the different health options you desire which you can group together.
 ```
 "ConfigurationName": "Health",
 "ConfigurationGroups": [
@@ -49,41 +94,11 @@ These sets are configurations categories you define in the tool. In example, hea
 ]
 ```
 
-## Goal
-With the above `configurations.json` you can see the define configuration and its groups. Once the combinations are generated, you yourself don't need to select a specific class slot. Instead, you can change individual properties for the player with the `property_based_class_manager_component.verse` and its `ChangeClassDelatProperties(agent, map{"Health" => "LowQuick"})`
-Be able to change behavior by individual properties, not by 
-
-Doing this process manually is time consuming. Therefore automation is the answer!
-
-## How to use UEFN Class Generator 
-<ol>
-<li>Importing / Editing Configuration Settings</li>
-  <ul>
-    <li>Import a previously exported & saved configurations json from the program</li>
-    <li>Use the provided buttons to add configurations, their groups, and an array of property-value pairs.</li>
-  </ul>
-<li>Export</li>
-  <ul>
-    <li>After making or importing configurations, you can save the configurations to a JSON file</li>
-    <li>You can also copy to the clipboard the configurations JSON string</li>
-    <li>You can generate the class combinations</li>
-  </ul>
-<li>Generate Class Combinations</li>
-   a.
-</ol>
-In the Fortnite UGC ecosystem using the Unreal Editor for Fortnite (UEFN), changing player or character properties is not trivial.
-Logic can be done mostly with the scripting language, Verse, but mostly only interacts through the game via compiled Blueprints known as "Devices."
-Devices are the what were used before Verse was around. They provide a lot of functionality to allow you to modify different things in your level/island/world.
-Two (2) of those devices are for what is called "classes."
-Classes, not in the programming sense, are really just strategies.
-So you can change:
-- Health
-- Sprinting Speed
-- Team behavior
-But not just that, there are plenty of other devices that rely on class slots for specific functionality. Class slots are often used for conditional checks
-```
-# Pseudo code
-if(isOnClass(player, 2)) { # Then ... }
-```
-The issue with these classes, is like the above provided pseudo code that they are identified by numerical slots, and players have to be exclusive to them.
-This means, if you want to have multiple options for health, but then independently have multiple options for team behavior: you have to make the combinations for that.
+## How it Works
+- `default_class_designer.txt` and `default_class_selector` are clipboards copied and edited from the UEFN editor.
+- These clipboards represent the UProperties of the respective devices.
+- I use Godot's RegEx implementation and format strings to simply replace values with the provided ones in the configurations.
+- Most of the properties are in the designer in the form of `(PropertyName="Name",PropertyValue="Value")` within a long list `PlayerOptionData` within the `ToyOptionsComponent`
+- Additionally, towards the end of both files the properties are repeated in seperate lines, like so: `Name=Value`
+- The replaced values have no effect unless a theres a `Name_Override=True` as well.
+- The same is done for the Verse tag markups which are thankfully copy-and-pastable in editor considering there is no multi-edit option at the moment.
