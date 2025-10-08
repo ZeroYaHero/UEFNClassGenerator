@@ -103,3 +103,4 @@ These sets are configurations categories you define in the tool. In example, hea
 - Additionally, towards the end of both files the properties are repeated in seperate lines, like so: `Name=Value`
 - The replaced values have no effect unless a theres a `Name_Override=True` as well.
 - The same is done for the Verse tag markups which are thankfully copy-and-pastable in editor considering there is no multi-edit option at the moment.
+- GODOT in hindsight is a little bloated for this project, but iterating with it is quick and I needed a solution fast and considering I have learned GODOT recently I thought why not.
