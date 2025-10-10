@@ -22,7 +22,7 @@ __That is a lot work to do...Have a computer do it!__
 <li>Importing / Editing Configuration Settings</li>
   <ul>
     <li>Import a previously exported & saved configurations json from the program</li>
-    <li>In the text edit box in the top right, type the name of your project. At the moment, the level you are in should be of the same name. Sub-directory/path support may come at a later date.</li>
+    <li>With the two text boxes in the top right, type your project name and the path to the level you desire to paste the devices in.</li>
     <li>Use the provided buttons to add configurations, their groups, and an array of property-value pairs.</li>
   </ul>
 <li>Export</li>
@@ -33,7 +33,8 @@ __That is a lot work to do...Have a computer do it!__
   </ul>
 <li>Generate Class Combinations</li>
    <ul>
-    <li>After the generation takes place, a window will pop up with two text blobs. Copy the right hand side which contains the Verse tag definitions and the `my_class_wrapper_getter` </li>
+    <li>A popup will ask you if you desire a Verse path other than the root content folder. If so, type that path in and press ok when done.</li>
+    <li>After the generation takes place, a window will pop up with two text blobs. Copy the right hand side which contains the Verse tag definitions and the `my_class_wrapper_getter`</li>
     <li>Paste the provided code into a new Verse file which is in the root level (content folder) of your UEFN project.</li>
     <li>**Build Verse code. Missing this step risks the pasting of the actors not working at all.**</li>
     <li>Copy the left hand side. This contains the UProperty clipboard for all the generated class designer and selector device/actors.</li>
@@ -102,3 +103,4 @@ These sets are configurations categories you define in the tool. In example, hea
 - Additionally, towards the end of both files the properties are repeated in seperate lines, like so: `Name=Value`
 - The replaced values have no effect unless a theres a `Name_Override=True` as well.
 - The same is done for the Verse tag markups which are thankfully copy-and-pastable in editor considering there is no multi-edit option at the moment.
+- GODOT in hindsight is a little bloated for this project, but iterating with it is quick and I needed a solution fast and considering I have learned GODOT recently I thought why not.
