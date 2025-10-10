@@ -7,7 +7,7 @@ Begin Map
 		 End Object
 		 Begin Object Class=/Script/Engine.StaticMeshComponent Name="EditorOnlyStaticMeshComponent" Archetype="/Script/Engine.StaticMeshComponent'/CreativeCoreDevices/Device_ClassDesigner_V2.Default__Device_ClassDesigner_V2_C:EditorOnlyStaticMeshComponent'" ExportPath="/Script/Engine.StaticMeshComponent':PersistentLevel.Device_ClassDesigner_V2_C_UAID_C87F545BB636519402_1107878042.EditorOnlyStaticMeshComponent'"
 		 End Object
-		 Begin Object Class=/Script/VerseGameplayTags.VerseTagMarkupComponent Name="VerseTagMarkup" ExportPath="/Script/VerseGameplayTags.VerseTagMarkupComponent'/Shop464/PROJECTNAME.PROJECTNAME:PersistentLevel.Device_ClassDesigner_V2_C_UAID_C87F545BB636289502_1148611898.VerseTagMarkup'"
+		 Begin Object Class=/Script/VerseGameplayTags.VerseTagMarkupComponent Name="VerseTagMarkup" ExportPath="/Script/VerseGameplayTags.VerseTagMarkupComponent'/PROJECTNAME/LEVELPATH.LEVELNAME:PersistentLevel.Device_ClassDesigner_V2_C_UAID_C87F545BB636289502_1148611898.VerseTagMarkup'"
 		 End Object
 		 Begin Object Class=/Game/Items/Traps/Blueprints/Toys/ToyOptionsComponent.ToyOptionsComponent_C Name="ToyOptionsComponent" Archetype="/Game/Items/Traps/Blueprints/Toys/ToyOptionsComponent.ToyOptionsComponent_C'/CreativeCoreDevices/Device_ClassDesigner_V2.Device_ClassDesigner_V2_C:ToyOptionsComponent_GEN_VARIABLE'" ExportPath="/Game/Items/Traps/Blueprints/Toys/ToyOptionsComponent.ToyOptionsComponent_C':PersistentLevel.Device_ClassDesigner_V2_C_UAID_C87F545BB636519402_1107878042.ToyOptionsComponent'"
 		 End Object
@@ -54,7 +54,7 @@ Begin Map
 			CachedMaxDrawDistance=7679.801270
 			AttachParent="StaticMeshComponent0"
 		 End Object
-		 Begin Object Name="VerseTagMarkup" ExportPath="/Script/VerseGameplayTags.VerseTagMarkupComponent'/PROJECTNAME/PROJECTNAME.PROJECTNAME:PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636279502_1837453706.VerseTagMarkup'"
+		 Begin Object Name="VerseTagMarkup" ExportPath="/Script/VerseGameplayTags.VerseTagMarkupComponent'/PROJECTNAME/LEVELPATH.LEVELNAME:PersistentLevel.Device_ClassSelector_V2_C_UAID_C87F545BB636279502_1837453706.VerseTagMarkup'"
 			InternalTags=(InternalTags=((InternalTag="/Script/CoreUObject.VerseClass'/PROJECTNAME/_Verse.TAG'")))
 			CreationMethod=Instance
 		 End Object

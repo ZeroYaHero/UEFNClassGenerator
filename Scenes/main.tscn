@@ -9,12 +9,13 @@ shader = ExtResource("2_jjvhh")
 shader_parameter/a = Color(1, 0, 0, 1)
 shader_parameter/b = Color(0, 0, 0.8039216, 1)
 
-[node name="Main" type="Node" node_paths=PackedStringArray("import_button", "export_button", "import_export_file_dialog", "project_name_line_edit")]
+[node name="Main" type="Node" node_paths=PackedStringArray("import_button", "export_button", "import_export_file_dialog", "project_name_line_edit", "level_path_line_edit")]
 script = ExtResource("1_8gbba")
 import_button = NodePath("VBoxContainer/HBoxContainer/ImportButton")
 export_button = NodePath("VBoxContainer/HBoxContainer/ExportButton")
 import_export_file_dialog = NodePath("ImportExportFileDialog")
 project_name_line_edit = NodePath("VBoxContainer/HBoxContainer/ProjectName")
+level_path_line_edit = NodePath("VBoxContainer/HBoxContainer/LevelPath")
 
 [node name="ImportExportFileDialog" type="FileDialog" parent="."]
 oversampling_override = 1.0
@@ -72,7 +73,12 @@ text = "Export"
 [node name="ProjectName" type="LineEdit" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-placeholder_text = "ProjectName"
+placeholder_text = "Project Name"
+
+[node name="LevelPath" type="LineEdit" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Level Path"
 
 [node name="AddConfigurationButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2

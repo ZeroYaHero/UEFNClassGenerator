@@ -6,6 +6,7 @@ enum FileState {IMPORTING, EXPORTING}
 @export var export_button:Button
 @export var import_export_file_dialog:FileDialog
 @export var project_name_line_edit:LineEdit
+@export var level_path_line_edit:LineEdit
 
 @onready var default_class_designer_template:String = FileAccess.open("res://Templates/default_class_designer.txt", FileAccess.ModeFlags.READ).get_as_text()
 @onready var default_class_selector_template:String = FileAccess.open("res://Templates/default_class_selector.txt", FileAccess.ModeFlags.READ).get_as_text()
@@ -126,6 +127,13 @@ func _generate_combos(json:Variant) -> void:
 	
 # check for defaults and replace those as well
 func _generate_designer_selector_and_component(combos:Array) -> void:
+	var verse_path_popup:AcceptDialog = load("res://Scenes/verse_path_dialog.tscn").instantiate()
+	add_child(verse_path_popup)
+	await verse_path_popup.confirmed
+	var verse_path:String = verse_path_popup.get_node(NodePath("VBoxContainer/LineEdit")).get_text()
+	verse_path_popup.queue_free()
+	var tag_path_array:PackedStringArray = verse_path.split("/", false)
+	
 	var regex:RegEx = RegEx.new()
 	var device_clipboard:String = ""
 	var verse_clipboard:String = tag_and_getter_template
@@ -133,6 +141,14 @@ func _generate_designer_selector_and_component(combos:Array) -> void:
 	regex.compile("PROJECTNAME")
 	var project_class_designer_template:String = regex.sub(default_class_designer_template, project_name_line_edit.get_text(), true)
 	var project_class_selector_template:String = regex.sub(default_class_selector_template, project_name_line_edit.get_text(), true)
+	regex.compile("LEVELPATH")
+	project_class_designer_template = regex.sub(project_class_designer_template, level_path_line_edit.get_text(), true)
+	project_class_selector_template = regex.sub(project_class_selector_template, level_path_line_edit.get_text(), true)
+	regex.compile("LEVELNAME")
+	var level_path_dirs:PackedStringArray = level_path_line_edit.get_text().split("/")
+	var level_name:String = level_path_dirs[level_path_dirs.size() - 1]
+	project_class_designer_template = regex.sub(project_class_designer_template, level_name, true)
+	project_class_selector_template = regex.sub(project_class_selector_template, level_name, true)
 	for i in range(combos.size()):
 		var class_slot:int = i + 1
 		
@@ -143,11 +159,15 @@ func _generate_designer_selector_and_component(combos:Array) -> void:
 		
 		var tag:String = "class_slot_%d_tag" % class_slot
 		var tag_definition:String = tag + " := class(tag){}"
+		var verse_tag_path_array:PackedStringArray = tag_path_array.duplicate()
+		verse_tag_path_array.append(tag)
+		var tag_path:String = "-".join(verse_tag_path_array)
 		tag_definitions.append(tag_definition)
 		
 		regex.compile("TAG")
-		var class_designer:String = regex.sub(project_class_designer_template, tag, true)
-		var class_selector:String = regex.sub(project_class_selector_template, tag, true)
+		var class_designer:String = regex.sub(project_class_designer_template, tag_path, true)
+		print("replacing TAG with %s" % tag_path)
+		var class_selector:String = regex.sub(project_class_selector_template, tag_path, true)
 		var class_swapper_construction:String = regex.sub(class_swapper_construction_template % class_slot, tag, true)
 		
 		regex.compile('PropertyName="(ClassIdentifier|ClassToSwitchTo)"((,PropertyData=")[^"]*(?="))?')
