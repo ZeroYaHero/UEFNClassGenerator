@@ -1,11 +1,21 @@
 # UEFN Class Generator
-![hippo](Examples/demonstration.gif)
+![gif](Examples/demonstration.gif)
 
-*As of date (October 4th, 2025) and Fortnite/UEFN version (37.40) this tool is functional and there is no native scripting or editor alternative.*
+*With today's Fortnite/UEFN version this tool is functional and there is no native scripting or editor alternative.*
 
-This is a GUI created in Godot to generate Fortnite/UEFN "Class Slots" given configurations containing property groups. The cartesian product of the configurations (sets) and their property groups (elements) results in new "Class Slots," which simply represent a combination of the provided configurations and their properties.
+This is a GUI created in Godot to generate Fortnite/UEFN "Class Slots" given configurations containing property groups. The cartesian product of the configurations (sets) and their property groups (elements) results in new "Class Slots," which simply represent a combination of the provided configurations and their properties. 
 
-**...Why do this?**
+**Warning: The UI is not pretty! But it works, and given the timeframe I had...I am happy with it**
+
+# Example In Live Game
+
+This tool was used to make a feature in [1V1 Build Fights! \[4.6.4\]](https://fortnite.gg/island?code=1832-0431-4852) possible! This game averages 15K-20K concurrent players, with its peak of ~37K.
+
+<img src="https://cdn-0001.qstv.on.epicgames.com/DvHxvhVqJouxUDkEkx/image/landscape_comp.jpeg" width="512">
+
+See what the tool contributed to more specifically [here](https://x.com/raidr_fn/status/1983178780522025357)
+
+### [Play Now: 1832-0431-4852](https://www.fortnite.com/play/island/1832-0431-4852?lang=en-US)
 
 ## Motivation
 In Fortnite/UEFN...
