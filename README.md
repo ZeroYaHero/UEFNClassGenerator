@@ -14,20 +14,14 @@ This tool was used to make a feature in [1V1 Build Fights! \[4.6.4\]](https://fo
 <img src="https://cdn-0001.qstv.on.epicgames.com/DvHxvhVqJouxUDkEkx/image/landscape_comp.jpeg" width="512">
 
 See what the tool contributed to more specifically [here](https://x.com/raidr_fn/status/1983178780522025357)
-
 ### [Play Now: 1832-0431-4852](https://www.fortnite.com/play/island/1832-0431-4852?lang=en-US)
 
-## Motivation
-In Fortnite/UEFN...
-- A player can only be of one (1) class at a time.
-- Class slots are just indexes which are referenced by  `class_designer_device` (Class Designer) and `class_and_team_selector_device` (Class Selector) which are read-only Blueprints known as Devices. Their roles are somewhat self explanatory, but I will elaborate further in a moment.
-- Both the Class Designer and Selector cannot be modified or instantiated at runtime.
+## How To Use
+- If you would like to use the tool and you do not care about the innerworkings, go to the [GitHub release page](https://github.com/ZeroYaHero/UEFNClassGenerator/releases) and download the latest binary. At the moment the only architecture is Windows x86_64, as UEFN is only runnable on that same architecture.
+- If you would like to actually modify the tool itself, clone the repository [here](https://github.com/ZeroYaHero/UEFNClassGenerator). You will need an installation of [Godot](https://godotengine.org/) of 4.5 or later.
 
-*Thus...*
-For every combination of settings you can think of, a new Class (Slot/Index) is necessary. Therefore, for each class slot, a new Class Designer and Selector are needed.
-__That is a lot work to do...Have a computer do it!__
-
-## Generating the Classes and Placing in Editor
+### Generating the Classes and Placing in Editor
+After running the program, here are the steps you should follow if the GUI is not clear.
 <ol>
 <li>Importing / Editing Configuration Settings</li>
   <ul>
@@ -52,7 +46,7 @@ __That is a lot work to do...Have a computer do it!__
   </ul>
 </ol>
 
-## Using the Generated Classes
+### Using the Generated Classes
 Once the combinations are generated, the getter code has been pasted, and Verse has been built... you are ready to go!
 
 With the provided `property_based_class_manager_component.verse` you don't need to memorize or manually input the classes properties in your system. It is abstracted away from you. All it takes is a simple call:
@@ -71,7 +65,7 @@ And of course, with this manager you can now easily see what exactly is the beha
 
 `GetCurrentClassProperties(agent):[string]string`
 
-## Example configurations.json
+### Example configurations.json
 These sets are configurations categories you define in the tool. In example, health. The elements of the configurations are all the different health options you desire which you can group together.
 ```
 "ConfigurationName": "Health",
@@ -114,3 +108,13 @@ These sets are configurations categories you define in the tool. In example, hea
 - The replaced values have no effect unless a theres a `Name_Override=True` as well.
 - The same is done for the Verse tag markups which are thankfully copy-and-pastable in editor considering there is no multi-edit option at the moment.
 - GODOT in hindsight is a little bloated for this project, but iterating with it is quick and I needed a solution fast and considering I have learned GODOT recently I thought why not.
+
+## Motivation
+In Fortnite/UEFN...
+- A player can only be of one (1) class at a time.
+- Class slots are just indexes which are referenced by  `class_designer_device` (Class Designer) and `class_and_team_selector_device` (Class Selector) which are read-only Blueprints known as Devices. Their roles are somewhat self explanatory, but I will elaborate further in a moment.
+- Both the Class Designer and Selector cannot be modified or instantiated at runtime.
+
+*Thus...*
+For every combination of settings you can think of, a new Class (Slot/Index) is necessary. Therefore, for each class slot, a new Class Designer and Selector are needed.
+__That is a lot work to do...Have a computer do it!__
